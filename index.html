@@ -222,42 +222,70 @@
   <!-- CAROSUL -->
   <div class="container-fluid" style="background-color: darkorange;">Carosul</div>
   <!-- 2 COL INFO -->
-  <div class="container-fluid" style="background-color: darkturquoise;">
-    <div class="container" style="background-color:darkgreen;">
+  <div class="container-fluid bg-success bg-gradient">
+    <div class="container">
       <div class="row">
-        <div class="col-sm-6" style="background-color: coral;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Iste pariatur voluptates consequatur perferendis, fugit neque consectetur voluptate. Quidem eos autem, soluta
-          saepe minus accusantium molestiae explicabo incidunt ut nobis et consectetur vel. Nostrum minus cum soluta
-          illo debitis optio, ab saepe, ratione excepturi quisquam magni dolor? Facere modi tempore similique maxime
-          laboriosam cupiditate minus odit animi omnis, nam magni, accusantium voluptates pariatur quae, reiciendis
-          assumenda quos at hic ea explicabo. Quidem, doloremque provident dolorem facere repellendus facilis
-          necessitatibus distinctio quo neque illum? Aliquam labore mollitia assumenda tempora dolorum quidem natus
-          nemo. Unde molestiae nulla corporis! Laudantium alias error sapiente omnis.</div>
-        <div class="col-sm-6" style="background-color: crimson;">foto der</div>
+        <div class="col-sm-6 p-5">
+          <h1>Titulo</h1>
+          <p style="font-family: Roboto, Oxygen, 'Open Sans', 'Helvetica Neue', sans-serif">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Iste pariatur voluptates consequatur perferendis, fugit neque consectetur voluptate. Quidem eos autem,
+            soluta
+            saepe minus accusantium molestiae explicabo incidunt ut nobis et consectetur vel. Nostrum minus cum soluta
+            illo debitis optio, ab saepe, ratione excepturi quisquam magni dolor? Facere modi tempore similique maxime
+            laboriosam cupiditate minus odit animi omnis, nam magni, accusantium voluptates pariatur quae, reiciendis
+            assumenda quos at hic ea explicabo. Quidem, doloremque provident dolorem facere repellendus facilis
+            necessitatibus distinctio quo neque illum? Aliquam labore mollitia assumenda tempora dolorum quidem natus
+            nemo.</p>
+        </div>
+        <div class="col-sm-6 m-auto">
+          <img src="img/1.jpg" class="img-fluid" alt="Imagen de paisaje">
+        </div>
       </div>
     </div>
   </div>
 
 
   <!-- CONTACT FORM-->
-  <div class="container">
-    <section id="Cform">
-      <br>
-      <h2>Formulario de contacto</h2>
-      <form class="row g-3 m-auto" id="form1" name="form1" action="receptor.php" method="POST" target="_blank">
-        <div class="col-md-4">
-          <input type="text" class="form-control modal-sm" id="Nombre" placeholder="Nombre" required>
+  <div class="container bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 p-5">
+          <section id="Cform">
+            <br>
+            <h2>Formulario de contacto</h2>
+            <form class="mb-4" id="form1" name="form1" action="receptor.php" method="POST" target="_blank">
+              <div class="mb-4">
+                <input type="text" class="form-control modal-sm" id="Nombre" placeholder="Nombre" required>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control modal-sm" id="Apellido" placeholder="Apellido" required>
+              </div>
+              <div class="mb-3">
+                <div class="input-group has-validation">
+                  <input type="email" class="form-control modal-sm" id="validationemail"
+                    placeholder="Email name@example.com" aria-describedby="inputGroupPrepend3 validationemail" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control modal-sm" id="validationTextarea" placeholder="Mensaje"
+                  required></textarea>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+              </div>
+            </form>
+            <br>
+          </section>
         </div>
-        <div class="col-md-4">
-          <input type="text" class="form-control modal-sm" id="Apellido" placeholder="Apellido" required>
-        </div>
-        <div class="col-md-4">
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend3">@</span>
-            <input type="email" class="form-control modal-sm" id="validationemail" placeholder="Email name@example.com"
-              aria-describedby="inputGroupPrepend3 validationemail" required>
+        <div class="col-sm-6 m-auto">
+          <div class="ratio" style="--bs-aspect-ratio: 50%;">
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.15309576457!2d-65.29263395675282!3d-26.832841656760422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1625435857160!5m2!1ses-419!2sar"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
+<<<<<<< Updated upstream
         <div class="col-md-12">
           <textarea class="form-control modal-sm" id="validationTextarea" placeholder="Mensaje" required></textarea>
         </div>
@@ -268,54 +296,58 @@
       <br>
     </section>
   </div>
+=======
+      </div>
+    </div>
+>>>>>>> Stashed changes
 
 
-  <!-- FOOTER -->
-  <div class="container">
-    <footer class="bg-dark row d-flex align-items-center">
-      <div class="row pe-0 ps-0">
-        <!-- columna 1 logo de pagina -->
+    <!-- FOOTER -->
+    <div class="container">
+      <footer class="bg-dark row d-flex align-items-center">
+        <div class="row pe-0 ps-0">
+          <!-- columna 1 logo de pagina -->
 
-        <div class="col-12 col-md-6 col-lg-4  d-flex pt-sm-4 pt-lg-0 pt-4 justify-content-center align-items-center ">
-          <img class="logopagina" src="logopagina.png" alt="logoprofile" />
-        </div>
+          <div class="col-12 col-md-6 col-lg-4  d-flex pt-sm-4 pt-lg-0 pt-4 justify-content-center align-items-center ">
+            <img class="logopagina" src="logopagina.png" alt="logoprofile" />
+          </div>
 
-        <!-- columna 2 redes sociales -->
+          <!-- columna 2 redes sociales -->
 
-        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
-          <ul class="p-0">
-            <li>
-              <a target="_blank" href="404"
-                class=" rrss text-decoration-none d-flex justify-content-center align-items-center my-3 pt-3">
-                <i class="fab fa-instagram fa-2x "></i>
-                <span class="ms-2"> DestinoTucuman</span>
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="404"
-                class=" rrss text-decoration-none d-flex justify-content-center align-items-center my-3 pt-3">
-                <i class="fab fa-facebook fa-2x"></i>
-                <span class="ms-2"> Destino Tucuman</span>
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="404"
-                class=" rrss text-decoration-none d-flex justify-content-center align-items-center my-3 pt-3">
-                <i class="fab fa-youtube fa-2x "></i>
-                <span class="ms-2">Destino Tucuman </span>
-              </a>
-            </li>
-            <!-- whatsapp 
+          <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+            <ul class="p-0">
+              <li>
+                <a target="_blank" href="error404.htm"
+                  class=" rrss text-decoration-none d-flex justify-content-center align-items-center my-3 pt-3">
+                  <i class="fab fa-instagram fa-2x "></i>
+                  <span class="ms-2"> DestinoTucuman</span>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="404"
+                  class=" rrss text-decoration-none d-flex justify-content-center align-items-center my-3 pt-3">
+                  <i class="fab fa-facebook fa-2x"></i>
+                  <span class="ms-2"> Destino Tucuman</span>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="404"
+                  class=" rrss text-decoration-none d-flex justify-content-center align-items-center my-3 pt-3">
+                  <i class="fab fa-youtube fa-2x "></i>
+                  <span class="ms-2">Destino Tucuman </span>
+                </a>
+              </li>
+              <!-- whatsapp 
                   <li>
                       <a target="_blank" href="404" class=" rrss text-decoration-none d-flex justify-content-center align-items-center my-2"> 
                           <i class="fab fa-whatsapp fa-2x "></i> 
                           <span class="ms-2">(+54) 3813002350</span>
                       </a>
                   </li> -->
-          </ul>
-        </div>
+            </ul>
+          </div>
 
-        <!-- opcion 1 
+          <!-- opcion 1 
           <div class="col  d-flex align-items-center justify-content-center m-2">
               <ul>
                   <li>
@@ -337,27 +369,27 @@
               </ul>
           </div>
       -->
-        <!-- columna 3 logo wd -->
-        <div class="col-12 col-md-12 col-lg-4 pb-sm-4 pb-md-4 pb-4 d-flex justify-content-center align-items-center ">
-          <div>
-            <img class="logowd" src="logowd.png" alt="logowd">
-          </div>
+          <!-- columna 3 logo wd -->
+          <div class="col-12 col-md-12 col-lg-4 pb-sm-4 pb-md-4 pb-4 d-flex justify-content-center align-items-center ">
+            <div>
+              <img class="logowd" src="logowd.png" alt="logowd">
+            </div>
 
-          <div>
-            <p class=" wd text-light m-1">COPYRIGHT @ 2021 </p>
-          </div>
+            <div>
+              <p class=" wd text-light m-1">COPYRIGHT @ 2021 </p>
+            </div>
 
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
 
-  </div>
+    </div>
 
 
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>

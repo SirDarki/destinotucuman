@@ -1,3 +1,11 @@
+.containercarousel {
+  background: #777;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+}
+
 footer{
   background-color: #618985;
 }

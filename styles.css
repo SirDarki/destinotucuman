@@ -8,7 +8,12 @@
 
 footer{
   background-color: #618985;
+  
+  width: 100%;
+  
+  
 }
+
 
 .logopagina {
   width: 10rem;
@@ -43,8 +48,8 @@ color: #ffffff;
   filter: blur(20px);
 }
 .rrss:hover:nth-child(1) {
-  color: #2ff61d;
-  text-shadow: 0 0 40px #2c2ac3;
+  color: #0a0a0a;
+  text-shadow: 0 0 40px #f6f6f7;
 }
 
 

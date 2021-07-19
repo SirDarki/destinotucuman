@@ -82,9 +82,11 @@ h6 {
 
 .navbar {
   font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: x-large;
   background-color: #618985;
 
 }
+
 
 .modal-content {
   background-color: #96BBBB;
@@ -103,10 +105,17 @@ h6 {
   cursor:default;
 }
 
-.destinotuc:hover {
-  opacity: 0.3;
-}
-
 .navbar li {
   color: #ffffff;
+}
+
+.logonavbar {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+
+}
+
+.logonavbar:hover {
+  opacity: 0.5;
 }

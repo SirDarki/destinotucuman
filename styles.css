@@ -15,7 +15,11 @@ footer {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-}
+  }
+  .logopagina:hover{
+    width: 10.5rem;
+    height: 10.5rem;
+  }
 
 .redes {
   color: #618985;

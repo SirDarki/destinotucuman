@@ -100,11 +100,11 @@ h6 {
   font-size: 30px;
   padding: 0 10px;
   font-weight: bold;
+  cursor:default;
 }
 
 .destinotuc:hover {
   opacity: 0.3;
-
 }
 
 .navbar li {

@@ -5,8 +5,8 @@
   right: 0;
   padding-bottom: 50px;
 }
-/* inicia estilos footer */
-footer{
+
+footer {
   background-color: #618985;
   width: 100%;
 }
@@ -15,39 +15,34 @@ footer{
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-  }
-  .logopagina:hover{
-    width: 10.5rem;
-    height: 10.5rem;
-  }
-  
+}
 
-.redes{
+.redes {
   color: #618985;
 }
-  
-h6{
-color: #ffffff;
+
+h6 {
+  color: #ffffff;
 }
 
-.destino{
+.destino {
   color: #ffffff;
 }
 
 
- .rrss{
+.rrss {
   font-size: 2em;
-	text-decoration: none;
+  text-decoration: none;
   color: aliceblue;
   font-weight: bolder;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-	
- }
+}
 
 .rrss:hover::before {
   transform: translateY(10px) scaleX(0.2) scaleY(2);
   filter: blur(20px);
 }
+
 .rrss:hover:nth-child(1) {
   color: #0a0a0a;
   text-shadow: 0 0 40px #f6f6f7;
@@ -61,15 +56,15 @@ color: #ffffff;
   filter: grayscale(1);
 
 }
-.logowd:hover{
+
+.logowd:hover {
   filter: grayscale(0);
 }
 
-.wd{
- font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- font-weight: bolder;
+.wd {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
 }
-/* finaliza estilo redes */
 .quienes {
   font-size: 4rem;
   font-family: 'Benne', serif;
@@ -85,12 +80,10 @@ color: #ffffff;
   font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #618985;
 
-
 }
 
 .modal-content {
   background-color: #96BBBB;
-
 }
 
 .formulario {
@@ -99,14 +92,17 @@ color: #ffffff;
 }
 
 .destinotuc {
-  color: #ffffff;
-  font-style: italic;
-  margin-left: 16px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.destinotuc:hover {
+  opacity: 0.3;
 
 }
 
-.destinotuc:hover{
-  opacity: 0.5;
- 
-  
+.navbar li {
+  color: #ffffff;
 }

@@ -18,45 +18,45 @@
   <div class="position-fixed bottom-0 end-0 m-1">
     <a class="btn" style="background-color: #618985; border-style: solid black;" href="#" role="button">Subir</a>
   </div>
-  
+
 
   <!-- Modal iniciar sesion -->
-  <div class="modal fade" id="iniciar-sesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="iniciar-sesion" name="iniciar-sesion" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ingrese sus datos</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Por favor,valide sus datos</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+
         <div class="modal-body">
-          <form class="formulario">
-            <div class="contenedor">
-              <div class="input-contenedor">
-                <i class="fas fa-envelope icon"></i>
-                <input type="text" maxlength="20" placeholder="Correo Electronico">
+         <div class="input-group mb-3">
+            <input type="text" maxlength="30" class="form-control" placeholder="Correo electronico"
+              aria-label="Correo electronico" required>
+         <div class="input-group mb-3">
+                <input type="password" maxlength="20" class="form-control" placeholder="Contraseña" aria-label="contraseña" required>
               </div>
-              <div class="input-contenedor">
-                <i class="fas fa-key icon"></i>
-                <input type="password" maxlength="20" placeholder="Contraseña">
-
-              </div>
-            </div>
-          </form>
+          </div>
         </div>
-        <div class="modal-footer">
+      </div>
 
-          <input type="submit" value="Iniciar sesion" class="button btn btn-secondary">
+      <div class="modal-footer">
 
-        </div>
+        <input type="submit" value="Ingresar" class="button btn btn-light">
       </div>
     </div>
   </div>
+
+
+
   <!--modal registrate-->
-  <div class="modal fade" id="registrate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="registrate" name="registrate" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Por favor,ingrese sus datos</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Por favor,complete todos los campos</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
@@ -66,39 +66,43 @@
           </div>
 
           <div class="input-group mb-3">
-            <input type="text" maxlength="30" class="form-control" placeholder="Correo electronico" aria-label="Correo electronico" required>
-            
+            <input type="text" maxlength="30" class="form-control" placeholder="Correo electronico"
+              aria-label="Correo electronico" required>
+
 
           </div>
           <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon2">Fecha de nacimiento</span>
-            <input type="date" class="form-control" placeholder="Fecha de nacimiento" aria-label="Fecha de nacimiento" required>
+            <input type="date" class="form-control" placeholder="Fecha de nacimiento" aria-label="Fecha de nacimiento"
+              required>
           </div>
           <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon2">N° de Teléfono</span>
-            <input type="tel"  id="codigodearea" maxlength="3" name="codigodearea"   class="form-control" placeholder="Código de área" aria-label="codigodearea" required>
-            <input type="tel"  id="telefono" maxlength="8" name="telefono"   class="form-control" placeholder=" Número" aria-label="Telefono" required>
+            <input type="tel" id="codigodearea" maxlength="3" name="codigodearea" class="form-control"
+              placeholder="Código de área" aria-label="codigodearea" required>
+            <input type="tel" id="telefono" maxlength="8" name="telefono" class="form-control" placeholder=" Número"
+              aria-label="Telefono" required>
           </div>
         </div>
       </div>
       <div class="modal-footer">
 
-        <input type="submit" value="Siguiente" class="button btn btn-light" >
+        <input type="submit" value="Siguiente" class="button btn btn-light">
       </div>
     </div>
   </div>
-  </div>
+
 
 
 
   <!--Empieza el navbar-->
 
 
-  <nav class="navbar navbar-expand-lg  sticky-top navbar-dark ">
+  <nav class="navbar navbar-expand-lg  sticky-top navbar-dark " >
     <div>
       <h4 class="destinotuc" id="destinotuc">DESTINO TUCUMAN </h4>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" style="font-style bold">
       <a class="navbar-brand" href="index.html">INICIO
       </a>
 
@@ -145,7 +149,8 @@
               IDIOMA
             </a>
             <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="/index.html">ESPAÑOL<img src="/img/002-spain.svg" width="30" height="30"></a>
+              <li><a class="dropdown-item" href="/index.html">ESPAÑOL<img src="/img/002-spain.svg" width="30"
+                    height="30"></a>
               </li>
               <hr class="dropdown-divider">
               <li><a class="dropdown-item" href="#">INGLES<img src="/img/001-united-kingdom.svg" width="30"
@@ -153,34 +158,36 @@
               <hr class="dropdown-divider">
               <li><a class="dropdown-item" href="#">PORTUGUES<img src="/img/001-brasil.svg" width="30" height="30"> </a>
               </li>
-          </ul>
-        </li>
-      </ul>
- 
+            </ul>
+          </li>
+        </ul>
+
 
         <!-- Boton de iniciar sesion -->
-       <div>
-      
-        <button type="button" class="btn bg-light" data-bs-toggle="modal" data-bs-target="#registrate" id="botonregistrate" class="botonregistrate">
-          Registrate
-          <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-          <path fill-rule="evenodd"
-            d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
-          <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
-          </svg>
-        </button>
-      </div>
-        
-      <div>
-        <button type="button" class="btn bg-light" data-bs-toggle="modal" data-bs-target="#iniciar-sesion" id="botoniniciarsesion" class="botoniniciarsesion">
-          Iniciar sesion
-          <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-          <path fill-rule="evenodd"
-            d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
-          <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
-          </svg>
-        </button>
-      </div>
+        <div>
+
+          <button type="button" style="margin: 10px" class="btn bg-light" data-bs-toggle="modal" data-bs-target="#registrate"
+            id="botonregistrate" class="botonregistrate">
+            Registrate
+            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+            <path fill-rule="evenodd"
+              d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+            <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+            </svg>
+          </button>
+        </div>
+
+        <div>
+          <button type="button" class="btn bg-light" data-bs-toggle="modal" data-bs-target="#iniciar-sesion"
+            id="botoniniciarsesion" class="botoniniciarsesion">
+            Iniciar sesion
+            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+            <path fill-rule="evenodd"
+              d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+            <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+            </svg>
+          </button>
+        </div>
       </div>
 
     </div>

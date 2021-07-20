@@ -15,353 +15,420 @@
 </head>
 
 <body>
+  <!-- Boton Subir -->
   <div class="position-fixed bottom-0 end-0 m-1">
     <a class="btn" style="background-color: #618985; border-style: solid black;" href="#" role="button">Subir</a>
   </div>
-  <!-- NAVBAR -->
 
-  <!-- Modal suscripcion-->
-  <div class="modal fade" id="suscripcion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+  <!-- Modal iniciar sesion -->
+  <div class="modal fade" id="iniciar-sesion" name="iniciar-sesion" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Dejanos tus datos y recibi las ultimas novedades!
-                </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Por favor,valide sus datos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="input-group mb-3">
+            <input type="text" maxlength="30" class="form-control" placeholder="Correo electronico"
+              aria-label="Correo electronico" required>
+            <div class="input-group mb-3">
+              <input type="password" maxlength="20" class="form-control" placeholder="Contraseña"
+                aria-label="contraseña" required>
             </div>
-            <div class="modal-body">
-                <div class="input-group">
-
-                    <input type="text" aria-label="nombre" class="form-control" placeholder="Nombre">
-                    <input type="text" aria-label="correo" class="form-control" placeholder="ejemplo@ejemplo.com"
-                        type="email">
-
-                </div>
-
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary">Suscribirme!</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- Modal iniciar sesion -->
-<div class="modal fade" id="iniciar-sesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Ingrese sus datos</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form class="formulario">
-
-                    <div class="contenedor">
-
-
-
-                        <div class="input-contenedor">
-                            <i class="fas fa-envelope icon"></i>
-                            <input type="text" placeholder="Correo Electronico">
-
-                        </div>
-
-                        <div class="input-contenedor">
-                            <i class="fas fa-key icon"></i>
-                            <input type="password" placeholder="Contraseña">
-
-                        </div>
-                        
-                         
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-               
-                <input type="submit" value="Iniciar sesion" class="button btn btn-secondary" >
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<!--empieza el navbar-->
-<nav class="navbar navbar-expand-lg  sticky-top navbar navbar-dark bg-dark">
-
-
-    </div>
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Inicio <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-                <path fill-rule="evenodd"
-                    d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-            </svg></a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link dropdown" aria-current="page" href="#">Quienes somos? <svg
-                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                            class="bi bi-code" viewBox="0 0 16 16">
-                            <path
-                                d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z" />
-                        </svg></a>
-                </li>
-
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Destinos turisticos <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                            fill="currentColor" class="bi bi-binoculars-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M4.5 1A1.5 1.5 0 0 0 3 2.5V3h4v-.5A1.5 1.5 0 0 0 5.5 1h-1zM7 4v1h2V4h4v.882a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V13H9v-1.5a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5V13H1V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V4h4zM1 14v.5A1.5 1.5 0 0 0 2.5 16h3A1.5 1.5 0 0 0 7 14.5V14H1zm8 0v.5a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5V14H9zm4-11H9v-.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5V3z" />
-                        </svg>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Ciudad historica</a></li>
-                        <li><a class="dropdown-item" href="#">Tafi del valle</a></li>
-                        <li><a class="dropdown-item" href="#">Circuito chico</a></li>
-                        <li><a class="dropdown-item" href="#">Prueba</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Prueba</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link " href="#" tabindex="-1">Contacto <svg xmlns="http://www.w3.org/2000/svg"
-                            width="20" height="20" fill="currentColor" class="bi bi-envelope-fill"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
-                        </svg></a>
-                </li>
-
-                <!-- Button trigger modal -->
-                <button type="button" class=" align-content-sm-end btn btn-dark" data-bs-toggle="modal"
-                    data-bs-target="#suscripcion">
-                    Suscribite!
-                </button>
-                
-                <li class="nav-item ">
-                    <a class="nav-link align-content-end" href="#"> <svg xmlns="http://www.w3.org/2000/svg"
-                            width="20" height="20" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
-                            <path
-                                d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z" />
-                            <path
-                                d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z" />
-                        </svg></a>
-                </li>
-
-            </ul>
-
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#iniciar-sesion">
-                Iniciar sesion       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-people-fill" viewBox="0 0 16 16">
-                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                    <path fill-rule="evenodd"
-                        d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
-                    <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
-                </svg>
-            </button>
-
-
-
-
-
-
-
-
-        </div>
-
-    </div>
-</nav>
-<!--fin del navbar, -->
-
-  <!-- CAROSUL -->
-  <div class="containercarousel-fluid">
-    <div id="carouselhome" class="carousel slide carousel-fade" data-bs-ride="carouselhome">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/Cimg1.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/Cimg2.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/Cimg3.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/Cimg4.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselhome" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselhome" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-  <!-- 2 COL INFO -->
-  <div class="container-fluid" style="background-color: #c19875;">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 p-5">
-          <h1>Titulo</h1>
-          <p style="font-family: 'Roboto', Oxygen, 'Open Sans', 'Helvetica Neue', sans-serif">Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit.
-            Iste pariatur voluptates consequatur perferendis, fugit neque consectetur voluptate. Quidem eos autem,
-            soluta
-            saepe minus accusantium molestiae explicabo incidunt ut nobis et consectetur vel. Nostrum minus cum soluta
-            illo debitis optio, ab saepe, ratione excepturi quisquam magni dolor? Facere modi tempore similique maxime
-            laboriosam cupiditate minus odit animi omnis, nam magni, accusantium voluptates pariatur quae, reiciendis
-            assumenda quos at hic ea explicabo. Quidem, doloremque provident dolorem facere repellendus facilis
-            necessitatibus distinctio quo neque illum? Aliquam labore mollitia assumenda tempora dolorum quidem natus
-            nemo.</p>
-        </div>
-        <div class="col-sm-6 m-auto">
-          <img src="img/RighPic1.jpeg" class="img-fluid" alt="Imagen de paisaje">
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- CONTACT FORM-->
-  <div class="container-fluid" style="background-color: #f2e3bc;">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 p-5">
-          <section id="Cform">
-            <br>
-            <h2>Formulario de contacto</h2>
-            <form class="mb-4" id="form1" name="form1" action="receptor.php" method="POST" target="_blank">
-              <div class="mb-4">
-                <input type="text" class="form-control modal-sm" id="Nombre" placeholder="Nombre" required>
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control modal-sm" id="Apellido" placeholder="Apellido" required>
-              </div>
-              <div class="mb-3">
-                <div class="input-group has-validation">
-                  <input type="email" class="form-control modal-sm" id="validationemail"
-                    placeholder="Email name@example.com" aria-describedby="inputGroupPrepend3 validationemail" required>
-                </div>
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control modal-sm" id="validationTextarea" placeholder="Mensaje"
-                  required></textarea>
-              </div>
-              <div class="col-12">
-                <button class="btn btn-primary" type="submit">Enviar</button>
-              </div>
-            </form>
-            <br>
-          </section>
-        </div>
-        <div class="col-sm-6 m-auto">
-          <div class="ratio" style="--bs-aspect-ratio: 50%;">
-
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.15309576457!2d-65.29263395675282!3d-26.832841656760422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1625435857160!5m2!1ses-419!2sar"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
       </div>
+
+      <div class="modal-footer">
+
+        <input type="submit" value="Ingresar" class="button btn btn-light">
+      </div>
     </div>
   </div>
 
-  <!-- FOOTER -->
- 
-  <footer class=" container-fluid footer  row d-flex align-items-center m-0">
-    <div class="  row pe-0 ps-0 m-0">
-        <!-- columna 1 logo de pagina -->
 
-        <div class="col-12 col-md-6 col-lg-4  d-flex pt-sm-4 pt-lg-0 pt-4 ps-sm-2 justify-content-center align-items-center ">
-            <img class="logopagina" src="img/logopagina.png" alt="logoprofile" />
+
+  <!--modal registrate-->
+  <div class="modal fade" id="registrate" name="registrate" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Por favor,complete todos los campos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
-        <!-- columna 2 redes sociales -->
-       
-        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center ">
-            
-           <ul class=" redes p-0">               
-            <li>
-                <div class="row d-flex justify-content-center align-content-center pt-3">
-                    <h6 class=" seguinos  text-center ">SEGUINOS EN</h6>
-                    <span class=" destino text-center">@DestinoTucuman</span>
-                </div>
-            </li>
-          
-            
-            <li>
-            <div class=" d-flex justify-content-center  ">
-                <div class=" text-decoration-none d-flex m-1  ">
-                    <a class="rrss" target="_blank" href="https://www.facebook.com">
-                        <i class="fab fa-facebook-square "></i>
-                    </a>
-                </div>
-                <div class="  text-decoration-none d-flex m-1">
-                    <a class="rrss" target="_blank" href="https://www.instagram.com">
-                        <i class="fab fa-instagram-square"></i>
-                    </a>
-                </div>
-                <div class=" text-decoration-none d-flex m-1">
-                    <a class="rrss" target="_blank" href="https://api.whatsapp.com/send?phone=549381300235">
-                        <i class="fab fa-whatsapp-square"></i>
-                    </a>
-                </div>
-                <div class="  text-decoration-none d-flex m-1">
-                    <a class="rrss" target="_blank" href="https://www.youtube.com">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
+        <div class="modal-body">
+          <div class="input-group mb-3">
+            <input type="text" maxlength="30" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+          </div>
 
-            </li>
-            
-            </ul>
+          <div class="input-group mb-3">
+            <input type="text" maxlength="30" class="form-control" placeholder="Correo electronico"
+              aria-label="Correo electronico" required>
+
+
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon2">Fecha de nacimiento</span>
+            <input type="date" class="form-control" placeholder="Fecha de nacimiento" aria-label="Fecha de nacimiento"
+              required>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon2">N° de Teléfono</span>
+            <input type="tel" id="codigodearea" maxlength="3" name="codigodearea" class="form-control"
+              placeholder="Código de área" aria-label="codigodearea" required>
+            <input type="tel" id="telefono" maxlength="8" name="telefono" class="form-control" placeholder=" Número"
+              aria-label="Telefono" required>
+          </div>
         </div>
+      </div>
+      <div class="modal-footer">
 
-      
-        <!-- columna 3 logo wd -->
-        <div class="col-12 col-md-12 col-lg-4 pb-sm-4 pb-md-4 pb-4 pt-4 d-flex justify-content-center align-items-center ">
-            <div class="  ">
-                <img class="logowd ms-4 " src="img/logowd.png" alt="logowd">
-                <p class=" wd text-light m-1">COPYRIGHT @ 2021 </p>
-            </div>
-
-        </div>
+        <input type="submit" value="Siguiente" class="button btn btn-light">
+      </div>
     </div>
-</footer>
+  </div>
 
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-          crossorigin="anonymous"></script>
+
+  <div class="contenedor">
+
+
+    <!--Empieza el navbar-->
+
+    <div class="input-contenedor">
+
+      <nav class="navbar navbar-expand-lg  sticky-top navbar-dark ">
+        <div>
+          <h4 class="destinotuc" id="destinotuc">DESTINO TUCUMAN </h4>
+        </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">INICIO
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a id="deportes" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  DEPORTES
+
+                </a>
+                <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Mountain bike</a></li>
+                  <li><a class="dropdown-item" href="#">Parapente</a></li>
+                  <li><a class="dropdown-item" href="#">Trekking</a></li>
+                  <li><a class="dropdown-item" href="#">Enduro</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Descubri mas!</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">¿QUIENES SOMOS?
+
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " href="#form1" tabindex="-1">CONTACTO
+                </a>
+              </li>
+
+              <li class="nav-item ">
+
+              </li>
+              <li class="nav-item dropdown" id="idioma" class="idioma">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  IDIOMA
+                </a>
+                <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/index.html">ESPAÑOL<img src="/img/002-spain.svg" width="30"
+                        height="30"></a>
+                  </li>
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item" href="#">INGLES<img src="/img/001-united-kingdom.svg" width="30"
+                        height="30"></a></li>
+                  <hr class="dropdown-divider">
+                  <li><a class="dropdown-item" href="#">PORTUGUES<img src="/img/001-brasil.svg" width="30" height="30">
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+
+            <!-- Boton de iniciar sesion -->
+            <div>
+
+              <button type="button" style="margin: 10px" class="btn bg-light" data-bs-toggle="modal"
+                data-bs-target="#registrate" id="botonregistrate" class="botonregistrate">
+                Registrate
+                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                <path fill-rule="evenodd"
+                  d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                </svg>
+              </button>
+            </div>
+
+            <div>
+              <button type="button" class="btn bg-light" data-bs-toggle="modal" data-bs-target="#iniciar-sesion"
+                id="botoniniciarsesion" class="botoniniciarsesion">
+                Iniciar sesion
+                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                <path fill-rule="evenodd"
+                  d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+      <!--fin del navbar, -->
+
+      <!-- CAROSUL -->
+      <div class="containercarousel-fluid">
+        <div id="carouselhome" class="carousel slide carousel-fade" data-bs-ride="carouselhome">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/Cimg1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Cimg2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Cimg3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Cimg4.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselhome" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselhome" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- 2 COL INFO -->
+      <div class="container-fluid" style="background-color: #c19875;">
+        <div class="container pt-4 pb-4">
+          <div class="row">
+            <div class="col-sm-6">
+              <h1>La Provincia</h1>
+              <p style="font-family: 'Roboto', Oxygen, 'Open Sans', 'Helvetica Neue', sans-serif">Tucumán es sinónimo de
+                historia. Es independencia. Es pequeñez geográfica pero grandeza de espíritu. Es un destino obligado
+                para todo aquel que quiera sumergirse en las raíces de un país rico. Es verde, es paz. Es el jardín de
+                la República y para eso, sobran fundamentos.<br><br>
+                Siendo la provincia más pequeña de la Argentina, se ubica en el noroeste del país, a 1.311 Kilómetros de
+                la Capital Federal. Su superficie es de 22.524 km² y se estima que viven en ella 1.687.305
+                habitantes.<br><br>
+                Su capital es San Miguel de Tucumán, en donde se combinan los ingredientes indispensables para hacer de
+                esta ciudad una tentación a la hora de recorrerla: amabilidad de su gente, historia y arquitectura que
+                se palpan en cada edificio, cercanía con los cerros y una calidez que se percibe en cada paseo. La
+                ciudad es apacible y tranquila; el mayor movimiento se da por la mañana o por la tarde dado que San
+                Miguel tiene un sello distintivo que es la siesta. De 14 a 17 hs. las calles quedan prácticamente vacías
+                y los negocios cierran. Sin embargo, durante las noches el espíritu provinciano se puede sentir en
+                bares, teatros, restaurantes y shoppings que de lunes a lunes abren sus puertas hasta después de la
+                media noche.<br><br>
+                La provincia ofrece una gran cantidad de recursos turísticos naturales como bellos paisajes, excelente
+                clima durante el otoño y el invierno, gran cantidad de áreas naturales protegidas como así también,
+                atractivos turísticos culturales con rasgos prehispánicos, jesuíticos o del período de auge intelectual
+                albergando actualmente cuatro Universidades que dictan más de 120 carreras que junto a otros centros de
+                estudios superiores, forman un valioso capital intelectual reconocido en todo el mundo.<br><br>
+                Entre los sitios de gran atractivo turístico corresponde señalar San Pedro de Colalao, Cerro San Javier,
+                Ruinas de Quilmes, Pucará de la Ciudacita, Raco, Simoca, el lago-embalse Escaba, Cochuna, la Laguna del
+                Tesoro, El Mollar, el Parque de los Menhires, la Quebrada de los Sosa, Tafí del Valle, El Siambón, Villa
+                Nougués, Yerba Buena, los cerros Nevados del Aconquija, Colalao del Valle, Amaicha del Valle, entre
+                otros.</p>
+            </div>
+            <div class="col-sm-6 m-auto">
+              <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="img/RighPic1.jpeg" class="d-block w-100 rounded" alt="Paisaje con parapentes">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="8000">
+                    <img src="img/RighPic2.jpeg" class="d-block w-100 rounded" alt="bosque con bicicletas">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="8000">
+                    <img src="img/RighPic3.jpeg" class="d-block w-100 rounded" alt="bicicleta en montaña">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="8000">
+                    <img src="img/RighPic4.jpeg" class="d-block w-100 rounded" alt="Parapentes">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="8000">
+                    <img src="img/RighPic5.jpeg" class="d-block w-100 rounded" alt="personas subiendo montaña">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CONTACT FORM-->
+      <div class="container-fluid" style="background-color: #f2e3bc;">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 pt-4 pb-5">
+              <section id="Cform">
+                <h2>Formulario de contacto</h2>
+                <form class="mb-4" id="form1" name="form1" action="receptor.php" method="POST" target="_blank">
+                  <div class="mb-3">
+                    <input type="text" class="form-control modal-sm" input maxlength="16" id="Nombre"
+                      placeholder="Nombre" required>
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="form-control modal-sm" input maxlength="16" id="Apellido"
+                      placeholder="Apellido" required>
+                  </div>
+                  <div class="mb-3">
+                    <div class="input-group has-validation">
+                      <input type="email" class="form-control modal-sm" input maxlength="30" id="validationemail"
+                        placeholder="Email name@example.com" aria-describedby="inputGroupPrepend3 validationemail"
+                        required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <textarea class="form-control modal-sm" id="validationTextarea" placeholder="Mensaje"
+                      required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                  </div>
+                </form>
+                <br>
+              </section>
+            </div>
+            <div class="col-sm-6 m-auto">
+              <div class="ratio" style="--bs-aspect-ratio: 50%;">
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.15309576457!2d-65.29263395675282!3d-26.832841656760422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1625435857160!5m2!1ses-419!2sar"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  <br><br><br><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+
+      <footer class=" container-fluid footer  row d-flex align-items-center m-0">
+        <div class="  row pe-0 ps-0 m-0">
+          <!-- columna 1 logo de pagina -->
+
+          <div
+            class="col-12 col-md-6 col-lg-4  d-flex pt-sm-4 pt-lg-0 pt-4 ps-sm-2 justify-content-center align-items-center ">
+            <img class="logopagina" src="img/logopagina.png" alt="logoprofile" />
+          </div>
+
+          <!-- columna 2 redes sociales -->
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center ">
+
+            <ul class=" redes p-0">
+              <li>
+                <div class="row d-flex justify-content-center align-content-center pt-3">
+                  <h6 class=" seguinos  text-center ">SEGUINOS EN</h6>
+                  <span class=" destino text-center">@DestinoTucuman</span>
+                </div>
+              </li>
+
+
+              <li>
+                <div class=" d-flex justify-content-center  ">
+                  <div class=" text-decoration-none d-flex m-1  ">
+                    <a class="rrss" target="_blank" href="https://www.facebook.com">
+                      <i class="fab fa-facebook-square "></i>
+                    </a>
+                  </div>
+                  <div class="  text-decoration-none d-flex m-1">
+                    <a class="rrss" target="_blank" href="https://www.instagram.com">
+                      <i class="fab fa-instagram-square"></i>
+                    </a>
+                  </div>
+                  <div class=" text-decoration-none d-flex m-1">
+                    <a class="rrss" target="_blank" href="https://api.whatsapp.com/send?phone=549381300235">
+                      <i class="fab fa-whatsapp-square"></i>
+                    </a>
+                  </div>
+                  <div class="  text-decoration-none d-flex m-1">
+                    <a class="rrss" target="_blank" href="https://www.youtube.com">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+
+              </li>
+
+            </ul>
+          </div>
+
+
+          <!-- columna 3 logo wd -->
+          <div
+            class="col-12 col-md-12 col-lg-4 pb-sm-4 pb-md-4 pb-4 pt-4 d-flex justify-content-center align-items-center ">
+            <div class="  ">
+              <img class="logowd ms-4 " src="img/logowd.png" alt="logowd">
+              <p class=" wd text-light m-1">COPYRIGHT @ 2021 </p>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

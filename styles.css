@@ -66,19 +66,13 @@ color: #ffffff;
 }
 
 .wd{
- font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-family:  'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  font-weight: bolder;
 }
 
-.quienes{
-  font-size: 4rem;
-  font-family: 'Benne', serif;
-  text-align: center;
-  
-}
-.quienessomos{
-  border-color: black solid 1px;
-}
+
+
+
 /* finaliza estilo redes */
 /* inicia estilo pagina quienes  */
 .quienes{

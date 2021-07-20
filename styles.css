@@ -52,6 +52,122 @@ h6 {
   text-shadow: 0 0 40px #f6f6f7;
 }
 
+/* finaliza estilo redes */
+
+/* inicia estilo pagina quienes  */
+.quienes{
+  background-color: rgb(58, 56, 56);
+  color: #f2e3bc;
+    
+  }
+  
+  
+  .banner{
+    width: 100%;
+    margin-top:55px ;    
+    position: relative;
+    
+    }
+  
+    .banner__img{
+      width: 60%;
+      filter: grayscale(1);
+        
+  }
+  
+    .banner__img:hover {
+      
+      filter: grayscale(0);
+    }
+    
+    
+   
+    
+    .banner__content{
+        width: 70%;
+        color: white;
+        font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 2em;
+        font-weight: bold;
+        background-color: #618985;
+        
+    }
+  
+    .our-team{
+      border: #618985 solid 1px;
+      
+    }
+  
+    .group__title{
+      font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      color: #c19875;
+      
+     
+       }
+    .group__title:hover{
+      font-style: italic;
+       }
+    
+    .our-team-descripcion{
+      text-align: center;
+      font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 1.2em;
+    }
+  .our-team__title{
+    font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 1px 1.1px #c19875;
+  
+  }
+  
+    .our-team__img{
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin: auto;
+      margin-bottom: 20px;
+      background-color: white;
+      
+      }
+      .our-team__img:hover{
+        width: 190px;
+      height: 190px;
+      
+      }
+  
+      .our-team-fotos{
+       
+        width: 100%;
+      }
+  
+      .card-img-top{
+        width: 400px;
+        border-radius: 10%;
+        
+      }
+      
+      .clientes{
+        background-color: gray;
+      }
+      .clientes__img{
+        width: 200px;
+        filter: grayscale(0.9);
+      }
+      .clientes__img:hover{
+        width: 220px;
+        filter: grayscale(0);
+      }
+      /* finaliza estilos pagina quienes  */
+
+
 
 .logowd {
   width: 6rem;
@@ -69,16 +185,6 @@ h6 {
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bolder;
 }
-.quienes {
-  font-size: 4rem;
-  font-family: 'Benne', serif;
-  text-align: center;
-
-}
-
-.quienessomos {
-  border-color: black solid 1px;
-}
 
 .navbar {
   font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -86,7 +192,6 @@ h6 {
   background-color: #618985;
 
 }
-
 
 .modal-content {
   background-color: #96BBBB;

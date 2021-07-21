@@ -264,3 +264,7 @@ h6 {
 .card-effect:hover .card-img-overlay{
   transition: scale(0.9);
 }
+
+.img-offcanvas{
+  width: 400px;
+}

@@ -122,13 +122,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
-                <a id="deportes" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                <a id="deportes" class="nav-link dropdown-toggle" href="#section-Deportes" id="navbarDropdown" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 40px;">
                   DEPORTES
 
                 </a>
                 <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Mountain bike</a></li>
+                  <li><a class="dropdown-item" href="#section-Deportes">Mountain bike</a></li>
                   <li><a class="dropdown-item" href="#">Parapente</a></li>
                   <li><a class="dropdown-item" href="#">Trekking</a></li>
                   <li><a class="dropdown-item" href="#">Enduro</a></li>
@@ -321,10 +321,59 @@
 
       <!-- SECTION DEPORTES -->
 
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-montain-bike"
         aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Montain-Bike</h5>
+          <div class="dropdown mx-5">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-bs-toggle="dropdown">
+            Donde practicarlo?
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="https://goo.gl/maps/j2XJ4pVn8KxbABH17">San Javier</a></li>
+              <li><a class="dropdown-item" href="https://goo.gl/maps/tsjeJERRwTR7eXkv7">El Cadillal</a></li>
+              <li><a class="dropdown-item" href="https://goo.gl/maps/fcvTTrv98MhnavoC6">Tafi del Valle</a></li>
+            </ul>
+          </div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Tanto los paseos en bicicleta como los deportes afines encuentran su lugar alrededor de toda la provincia. Son numerosos los espacios en donde pueden llevarse a cabo y son cada vez más quienes optan por la práctica de los mismos.
+            La práctica de mountain bike por senderos rodeados de montañas y ríos, en los que los participantes miden fuerza y destreza en un medio natural, permite explorar la flora y fauna tucumana junto a sus rincones más característicos.
+          </div>
+          
+          <div class="container mt-5 ">
+            <div class="row my-2">
+              <img class="img-offcanvas" src="/img/img-offcanvas-Mountain-Bike-1.jpeg" alt="img-offcanvas-Mountain-Bike-1">
+            </div>
+            <div class="row my-2">
+              <img class="img-offcanvas" src="/img/img-offcanvas-Mountain-Bike-2.jpeg" alt="img-offcanvas-Mountain-Bike-2">
+            </div>
+            <div class="row my-2">
+              <img class="img-offcanvas" src="/img/img-offcanvas-Mountain-Bike-3.jpeg" alt="img-offcanvas-Mountain-Bike-3">
+            </div>
+              
+          </div>
+        </div>
+      </div>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-enduro"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Enduro</h5>
+          <div class="dropdown mx-5">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-bs-toggle="dropdown">
+            Donde practicarlo?
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="https://goo.gl/maps/j2XJ4pVn8KxbABH17">San Javier</a></li>
+              <li><a class="dropdown-item" href="https://goo.gl/maps/tsjeJERRwTR7eXkv7">El Cadillal</a></li>
+              <li><a class="dropdown-item" href="https://goo.gl/maps/fcvTTrv98MhnavoC6">Tafi del Valle</a></li>
+            </ul>
+          </div>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -337,27 +386,100 @@
             Dentro de los lugares más destacados en la provincia para la práctica de este deporte, podemos
             destacar San Pedro de Colalao, La Sala, San Javier, Raco y El Siambón, entre otros.
           </div>
-          <div class="dropdown mt-3">
+          <div class="container mt-5 ">
+            <div class="row my-2">
+                <img class="img-offcanvas" src="/img/img-offcanvas-enduro-1.jpeg" alt="img-offcanvas-enduro-1">
+            </div>
+            <div class="row my-2">
+                <img class="img-offcanvas" src="/img/img-offcanvas-enduro-2.jpeg" alt="img-offcanvas-enduro-2">
+            </div>
+            <div class="row my-2">
+                <img class="img-offcanvas" src="/img/img-offcanvas-enduro-3.jpeg" alt="img-offcanvas-enduro-3">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-parapente"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Parapente</h5>
+          <div class="dropdown mx-5">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-              data-bs-toggle="dropdown">
-              Donde practicarlo?
+            data-bs-toggle="dropdown">
+            Donde practicarlo?
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="/error404.html">Aqui</a></li>
-              <li><a class="dropdown-item" href="#">Alla</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="https://g.page/LomaBola?share">Loma Bola - San Javier</a></li>
+              </ul>
+          </div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Tucumán cuenta con un centro de deporte de montaña ubicado en San Javier enfocado principalmente en vuelos en parapente. Más de 20 años de experiencia hacen de Loma Bola pioneros en esta actividad. La esperiencia se traduce en una vivencia unica sobre los cielos del Gran Tucumán. Loma Bola es una Reserva Natural de Aventuras en la que el vuelo en parapente ocupa el primer lugar de actividades ya que por sus bondades de ubicación, accesibilidad y condiciones de vuelo durante todo el año hicieron del sitio uno de los mejores centros de vuelo del mundo. 
+          </div>
+          <div class="container mt-5 ">
+            <div class="row my-2">  
+              <img class="img-offcanvas" src="/img/img-offcanvas-parapente-1.jpeg" alt="img-offcanvas-parapente-1">
+            </div>
+            <div class="row my-2">  
+              <img class="img-offcanvas" src="/img/img-offcanvas-parapente-2.jpeg" alt="img-offcanvas-parapente-2">
+            </div>
+            <div class="row my-2">
+              <img class="img-offcanvas" src="/img/img-offcanvas-parapente-3.jpeg" alt="img-offcanvas-parapente-3">
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-trekking"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Trekking</h5>
+          <div class="dropdown mx-5">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-bs-toggle="dropdown">
+            Donde practicarlo?
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="https://goo.gl/maps/j2XJ4pVn8KxbABH17">San Javier</a></li>
+              <li><a class="dropdown-item" href="https://goo.gl/maps/tsjeJERRwTR7eXkv7">El Cadillal</a></li>
+              <li><a class="dropdown-item" href="https://goo.gl/maps/fcvTTrv98MhnavoC6">Tafi del Valle</a></li>
             </ul>
           </div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Tucumán es un destino natural para la práctica de este deporte. La provincia cuenta
+            con una red de sendas que invitan a recorrer diferentes ecosistemas en un marco de aventura y
+            diversión.
+            Cada una de ellas ofrece distintos grados de dificultad posibilitando el recorrido a personas de todas
+            las edades.
+          </div>
+          <div class="container mt-5 ">
+            <div class="row my-2">
+                <img class="img-offcanvas" src="/img/img-offcanvas-trekking-1.jpeg" alt="img-offcanvas-trekking-1">
+            </div>
+            <div class="row my-2">
+                <img class="img-offcanvas" src="/img/img-offcanvas-trekking-1.jpeg" alt="img-offcanvas-trekking-2">
+            </div>
+            <div class="row my-2">
+                <img class="img-offcanvas" src="/img/img-offcanvas-trekking-1.jpeg" alt="img-offcanvas-trekking-3">
+            </div>
+          </div>
+          
         </div>
       </div>
 
 
-      <section class="container py-5 ">
+      <section id="section-Deportes" class="container py-5 ">
+        <h1>Deportes</h1>
         <div class="row text-center section-deportes">
-
           <div class="col-12">
-            <h2 style="color:green;">Deportes</h2>
-            <p class="pt-4">Tucumán es un destino nato para la práctica de deportes. Nuestra provincia te ofrece
+            <p style="font-family: 'Roboto', Oxygen, 'Open Sans', 'Helvetica Neue', sans-serif" class="pt-4">Tucumán es un destino nato para la práctica de deportes. Nuestra provincia te ofrece
               escenarios de increíble belleza para que lleves a cabo las más variadas actividades. Desde fútbol, el
               deporte más típico del país, hasta la práctica de deportes extremos. </p>
             <p>Encontrá la información necesaria y animate a vivir una experiencia increíble.</p>
@@ -368,9 +490,12 @@
             <div class="card">
               <img src="img/secDeportes-montain-bike.jpg" class="card-img card-img-filter" alt="montain-bike">
               <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                <h5 class="card-title">Montain Bike</h5>
+                <h5 class="card-title">MOUNTAIN BIKE</h5>
                 <p class="card-text"></p>
-                <a href="" class="btn btn-primary text-reset">Leer más.</a>
+                <a class="btn btn-outline-light" data-bs-toggle="offcanvas" href="#offcanvas-montain-bike" role="button"
+                  aria-controls="offcanvasExample">
+                  Leer más.
+                </a>
               </div>
             </div>
           </article>
@@ -379,11 +504,11 @@
             <div class="card">
               <img src="img/secDeportes-enduro.jpg" class="card-img card-img-filter" alt="enduro">
               <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                <h5 class="card-title">Enduro</h5>
-                <p class="card-text">.</p>
-                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                <h5 class="card-title">ENDURO</h5>
+                <p class="card-text"></p>
+                <a class="btn btn-outline-light" data-bs-toggle="offcanvas" href="#offcanvas-enduro" role="button"
                   aria-controls="offcanvasExample">
-                  Link with href
+                  Leer más.
                 </a>
               </div>
             </div>
@@ -393,10 +518,12 @@
             <div class="card">
               <img src="img/secDeportes-parapente.jpeg" class="card-img card-img-filter" alt="parapente">
               <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                <h5 class="card-title">Parapente</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary text-reset">Leer más.</a>
+                <h5 class="card-title">PARAPENTE</h5>
+                <p class="card-text"></p>
+                  <a class="btn btn-outline-light" data-bs-toggle="offcanvas" href="#offcanvas-parapente" role="button"
+                  aria-controls="offcanvasExample">
+                  Leer más.
+                </a>
               </div>
             </div>
           </article>
@@ -405,13 +532,12 @@
             <div class="card">
               <img src="img/secDeportes-trekking.jpeg" class="card-img card-img-filter" alt="trekking">
               <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
-                <h5 class="card-title">Trekking</h5>
-                <p class="card-text">Tucumán es un destino natural para la práctica de este deporte. La provincia cuenta
-                  con una red de sendas que invitan a recorrer diferentes ecosistemas en un marco de aventura y
-                  diversión.
-                  Cada una de ellas ofrece distintos grados de dificultad posibilitando el recorrido a personas de todas
-                  las edades. </p>
-                <a href="#" class="btn btn-primary text-reset">Leer más.</a>
+                <h5 class="card-title">TREKKING</h5>
+                <p class="card-text"></p>
+                  <a class="btn btn-outline-light" data-bs-toggle="offcanvas" href="#offcanvas-trekking" role="button"
+                  aria-controls="offcanvasExample">
+                  Leer más.
+                </a>
               </div>
             </div>
           </article>
